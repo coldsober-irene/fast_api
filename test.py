@@ -25,5 +25,5 @@ df = pd.DataFrame([['irene','nothing',30],
 # def show():
 #     return df.to_dict(orient = 'series')
 @app.get("/questions")
-def load_questions():
-    return Response(df.to_json(orient="split"), media_type="application/json") # split, values, index application/json specifies the output format to be json
+def load_questions(orient:str='split'):
+    return Response(df.to_json(orient=orient), media_type="application/json") # split, values, index application/json specifies the output format to be json
