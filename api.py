@@ -28,3 +28,5 @@ def names(first_name: bool = False, second_name: bool = False, full_name: bool =
         full_names = "Coldsober Irene"
     return full_names
 
+if __name == "__main__":
+    myApp.run()
